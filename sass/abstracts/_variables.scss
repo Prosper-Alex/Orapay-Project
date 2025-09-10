@@ -1,0 +1,36 @@
+$primary-color: #0a0a0a; /* Deep Black – for header, hero text */
+$secondary-color: #737373; /* Mid Gray – for body text */
+$accent-color: #c19a6b; /* Warm Tan – button hover, accents */
+$accent-color--light: #c89d63; /* Warm Tan – button hover, accents */
+$light-bg-color: #f5f5f5; /* Very Light Gray – page background */
+$border-color: #e0e0e0; /* Subtle Gray – dividers and borders */
+$white: #ffffff; /* Clean white for sections, typography */
+$alice-blue: #edf3f7;
+
+$subtle-grey: #1a1a1a;
+// Font colors
+$accent-text-color: #1a191e;
+$accent-text-color-fade: #1a191e85;
+$text-color-light: #1a191e80;
+$primary-font: "Grifter", sans-serif;
+
+// GREY COLORS
+
+// Borde-radius
+
+$border-radius-sm: 15px;
+$border-radius-rm: 7px;
+
+// Box-Shadow for button
+
+$btn-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.25);
+$btn-shadow--hover: 8px 8px 0px 0px rgba(0, 0, 0, 0.25);
+$btn-shadow--clicked: 1.5px 1.5px 0px 0px rgba(0, 0, 0, 0.25);
+
+$black-shadow: 6px 6px 0px 0px rgba(0, 0, 0);
+$black-shadow-hover: 8px 8px 0px 0px rgba(0, 0, 0);
+$black-shadow--clicked: 1.5px 1.5px 0px 0px rgba(0, 0, 0);
+
+$drop-shadow: 6px 6px 0px 0px rgba(129, 173, 200, 1);
+$drop-shadow--hover: 8px 8px 0px 0px rgba(129, 173, 200, 1);
+$drop-shadow--clicked: 1.5px 1.5px 0px 0px rgba(129, 173, 200, 1);
