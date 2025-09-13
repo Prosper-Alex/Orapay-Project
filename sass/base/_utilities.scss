@@ -2,8 +2,8 @@
 @use "../abstracts/variables" as *;
 
 .center-children--bg {
-  padding-left: 8vw !important;
-  padding-right: 8vw !important;
+  padding-left: 6vw !important;
+  padding-right: 6vw !important;
 
   @include tab-land() {
     padding-left: 6vw !important;
@@ -147,4 +147,18 @@
       font-size: 1.5rem;
     }
   }
+}
+
+// Font
+
+.gridular {
+  font-family: "gridular", sans-serif;
+}
+
+.fm {
+  font-size: 1.6rem;
+}
+
+.fb {
+  font-size: 1.8rem;
 }

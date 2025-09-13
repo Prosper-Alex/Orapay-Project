@@ -8,7 +8,7 @@
 }
 
 @font-face {
-  font-family: "Grifter", sans-serif;
+  font-family: "Grifter";
   src: url(/assets/fonts/grifter-font/grifterbold.otf) format("opentype");
   font-weight: normal;
 }
@@ -27,8 +27,8 @@ html {
   scroll-behavior: smooth;
 }
 
-h1,
 h2,
+h1,
 h3 {
   font-family: $primary-font;
 }

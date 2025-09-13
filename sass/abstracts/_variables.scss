@@ -1,6 +1,6 @@
-$primary-color: #0a0a0a; /* Deep Black – for header, hero text */
-$secondary-color: #737373; /* Mid Gray – for body text */
-$accent-color: #c19a6b; /* Warm Tan – button hover, accents */
+$primary-color: #000; /* Deep Black – for header, hero text */
+$secondary-color: #fff; /* Mid Gray – for body text */
+$accent-color: #e9ff52; /* Warm Tan – button hover, accents */
 $accent-color--light: #c89d63; /* Warm Tan – button hover, accents */
 $light-bg-color: #f5f5f5; /* Very Light Gray – page background */
 $border-color: #e0e0e0; /* Subtle Gray – dividers and borders */
@@ -16,9 +16,10 @@ $primary-font: "Grifter", sans-serif;
 $secondary-font: "Montserrat Alternates", sans-serif;
 
 // GREY COLORS
-
+$grey-color: #777;
 // Borde-radius
 
+$border-radius-md: 27.5px;
 $border-radius-sm: 15px;
 $border-radius-rm: 7px;
 

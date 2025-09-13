@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "grifter";
+  src: url("../assets/fonts/grifter-font/grifterbold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "gridular";
+  src: url("../assets/fonts/gridular-font/Gridular-Regular.ttf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
