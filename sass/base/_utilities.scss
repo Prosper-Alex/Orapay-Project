@@ -2,8 +2,8 @@
 @use "../abstracts/variables" as *;
 
 .center-children--bg {
-  padding-left: 6vw !important;
-  padding-right: 6vw !important;
+  padding-left: 8vw !important;
+  padding-right: 8vw !important;
 
   @include tab-land() {
     padding-left: 6vw !important;
@@ -12,8 +12,20 @@
 }
 
 .center-children--sm {
-  padding-left: 4vw !important;
-  padding-right: 4vw !important;
+  padding-left: 6vw !important;
+  padding-right: 6vw !important;
+
+  @include tab-land() {
+    padding-left: 4vw !important;
+    padding-right: 4vw !important;
+  }
+}
+
+.dark-bg {
+  background-color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
 }
 
 .content-btn {
@@ -59,22 +71,22 @@
   box-shadow: $btn-shadow--hover;
 }
 
-.dark-bg {
-  box-shadow: $black-shadow;
+// .dark-bg {
+//   box-shadow: $black-shadow;
 
-  border-radius: $border-radius-rm;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
+//   border-radius: $border-radius-rm;
+//   transition: transform 0.2s ease, box-shadow 0.2s ease;
+// }
 
-.dark-bg:active {
-  transform: translateY(2px);
-  box-shadow: $black-shadow--clicked;
-}
+// .dark-bg:active {
+//   transform: translateY(2px);
+//   box-shadow: $black-shadow--clicked;
+// }
 
-.dark-bg:hover {
-  transform: translateY(-2px);
-  box-shadow: $black-shadow-hover;
-}
+// .dark-bg:hover {
+//   transform: translateY(-2px);
+//   box-shadow: $black-shadow-hover;
+// }
 
 .light-shadow {
   box-shadow: $btn-shadow;
@@ -150,7 +162,6 @@
 }
 
 // Font
-
 .gridular {
   font-family: "gridular", sans-serif;
 }
@@ -161,4 +172,28 @@
 
 .fb {
   font-size: 1.8rem;
+}
+
+// Text
+
+.pr-tx {
+  font-family: $primary-font;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -4%;
+  text-transform: uppercase;
+}
+
+.bg {
+  font-size: 18rem !important;
+  animation: moveinleft 1s ease-out;
+
+  @include tab-land {
+    font-size: 10rem !important;
+  }
+
+  @include phone {
+    font-size: 5rem;
+    line-height: 1.2;
+  }
 }

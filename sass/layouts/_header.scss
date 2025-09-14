@@ -1,2 +1,13 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
+
+.header {
+  //   &_wrapper {
+  //   }
+
+  &_text {
+    .heading-primary.bg {
+      text-align: center;
+    }
+  }
+}

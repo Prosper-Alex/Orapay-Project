@@ -30,13 +30,15 @@ html {
   font-weight: 600;
   line-height: 100%;
   letter-spacing: -4%;
+  text-transform: uppercase;
 }
 
 .heading-primary.bg {
-  font-size: 10rem;
+  font-size: 18rem !important;
   animation: moveinleft 1s ease-out;
+
   @include tab-land {
-    font-size: 7rem;
+    font-size: 10rem !important;
   }
 
   @include phone {
