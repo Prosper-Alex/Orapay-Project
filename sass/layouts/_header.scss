@@ -10,4 +10,49 @@
       text-align: center;
     }
   }
+
+  // &_content{
+
+  // }
+
+  &_info {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    .info-line--wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      .paragraph {
+        width: 20%;
+      }
+    }
+
+    .info-text--wrapper {
+      position: relative;
+      background-color: $subtle-grey;
+      padding: 2rem 5rem;
+      width: max-content;
+      display: flex;
+      align-items: center;
+      gap: rem;
+      border-radius: $border-radius-bg;
+
+      .info-text {
+        margin-right: 3rem;
+      }
+
+      .info-icon {
+        position: absolute;
+        right: -3rem;
+        img {
+          background-color: $accent-color;
+          padding: 1.4rem;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
 }

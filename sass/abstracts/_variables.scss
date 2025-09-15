@@ -7,7 +7,7 @@ $border-color: #e0e0e0; /* Subtle Gray – dividers and borders */
 $white: #ffffff; /* Clean white for sections, typography */
 $alice-blue: #edf3f7;
 
-$subtle-grey: #1a1a1a;
+$subtle-grey: #1f1f1f;
 // Font colors
 $accent-text-color: #1a191e;
 $accent-text-color-fade: #1a191e85;
@@ -16,9 +16,10 @@ $primary-font: "Grifter", sans-serif;
 $secondary-font: "Montserrat Alternates", sans-serif;
 
 // GREY COLORS
-$grey-color: #4e575f;
+$grey-color: #777;
 // Borde-radius
 
+$border-radius-bg: 80px;
 $border-radius-md: 27.5px;
 $border-radius-sm: 15px;
 $border-radius-rm: 7px;
