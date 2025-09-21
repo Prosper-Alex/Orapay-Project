@@ -14,7 +14,7 @@
   &_content {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     position: relative;
   }
 
@@ -29,7 +29,7 @@
       gap: 1.5rem;
 
       .paragraph {
-        width: 20%;
+        width: 30%;
       }
     }
 
@@ -66,6 +66,38 @@
     align-items: center;
   }
 
+  &_card--btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 3rem;
+    border-radius: $border-radius-bg;
+    transform: translateX(-50%);
+    background: linear-gradient(180deg, #4e575f 0%, #1f1f1f 100%);
+    top: -12rem;
+    left: 50%;
+    z-index: 1;
+    cursor: pointer;
+
+    &_card--btn:hover {
+      background: linear-gradient(180deg, #60686f 0%, #2a2a2a 100%);
+    }
+
+    .btn-arrow {
+      display: inline-block;
+      width: 5rem;
+    }
+
+    .accent {
+      top: 30rem;
+      display: flex;
+      align-items: center;
+      color: $accent-color;
+      font-size: 2.7rem;
+    }
+  }
+
   .header_cards {
     position: absolute;
     top: 0; // keep them close to the button
@@ -79,21 +111,42 @@
       left: 50%;
       border-radius: 20px;
       transform: translateX(-50%);
+      height: 50vh;
+      width: 50rem;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
 
       &.cd-1 {
         position: relative;
         z-index: 3;
-        bottom: 10rem;
-
-        img {
-          // backdrop-filter: blur(70px);
-        }
 
         .heading-tertiary.sm {
+          font-weight: 500;
+          font-family: $secondary-font;
+          bottom: -5rem;
+          height: 50vh;
+          right: 11rem;
+          width: 35rem;
           position: absolute;
-          bottom: 14rem;
-          right: 19rem;
-          transform: skewy(-20deg);
+          background-color: rgb(255, 255, 255, 0.5);
+          backdrop-filter: blur(5px);
+          transform: skew(-19deg, -25deg);
+          border-radius: $border-radius-sm;
+          border: 1px solid $white;
+
+          span {
+            font-size: 2.7rem;
+            right: 1rem;
+            bottom: 1.5rem;
+            position: absolute;
+            z-index: 10;
+            font-weight: 500;
+            font-family: "Montserrat Alternates", sans-serif;
+            padding: 2rem;
+          }
         }
       }
 
@@ -104,8 +157,7 @@
 
       &.cd-3 {
         z-index: 1;
-
-        top: 40rem;
+        top: 35rem;
       }
     }
   }
