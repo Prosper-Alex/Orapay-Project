@@ -2,8 +2,9 @@
 @use "../abstracts/mixins" as *;
 
 .header {
-  //   &_wrapper {
-  //   }
+  &_wrapper {
+    margin-bottom: 10rem;
+  }
 
   &_text {
     .heading-primary.bg {
@@ -98,7 +99,7 @@
     }
   }
 
-  .header_cards {
+  &_cards {
     position: absolute;
     top: 0; // keep them close to the button
     left: 50%;
@@ -158,6 +159,60 @@
       &.cd-3 {
         z-index: 1;
         top: 35rem;
+      }
+    }
+  }
+
+  &_rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .rate-box {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 0.3rem;
+      width: 20rem;
+      border-radius: $border-radius-sm;
+      padding: 3rem;
+    }
+
+    .white-border {
+      border: 1px solid $border-color-dark;
+    }
+    .accent-border {
+      border: 1px solid $accent-color;
+    }
+  }
+  &_logos {
+    margin-top: 50rem;
+    .logo-marquee {
+      overflow: hidden;
+
+      width: 100%;
+
+      .logo-track {
+        border-top: 1px solid $border-color-light;
+        border-bottom: 1px solid $border-color-light;
+        display: flex;
+        width: max-content;
+        animation: scroll $marquee-speed linear infinite;
+        padding: 5rem 0;
+
+        .header_logo {
+          flex: 0 0 auto;
+          padding: 0 5rem;
+
+          &:not(:last-child) {
+            border-right: 1px solid $border-color-light;
+          }
+
+          img {
+            height: 5rem;
+            width: auto;
+          }
+        }
       }
     }
   }

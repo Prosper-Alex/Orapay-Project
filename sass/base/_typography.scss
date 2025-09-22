@@ -102,6 +102,21 @@ html {
   }
 }
 
+.heading-secondary.sm {
+  font-size: 5.2rem;
+  letter-spacing: -2%;
+  font-weight: 400;
+
+  @include tab-land {
+    font-size: 4rem;
+    line-height: 1.4;
+  }
+  @include medium-phone {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+}
+
 .heading-tertiary {
   font-family: $secondary-font;
   font-weight: 600;

@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet" />
 
+    <!-- Odometre effect -->
+
+    <link rel="stylesheet" href="odometer-theme-car.css" />
+
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/font.css" />
 
@@ -49,7 +53,8 @@
               <br />
               <span class="accent-color"
                 ><span class="gridular bg">b</span><span class="bg">ankin</span
-                ><span class="gridular bg">g.</span></span
+                ><span class="gridular bg">g</span>
+                <span class="bg">.</span></span
               >
             </h1>
           </div>
@@ -113,7 +118,69 @@
             </div>
 
             <div class="header_rating">
-              <h1>rating</h1>
+              <div class="rate-box white-border">
+                <h2 class="heading-secondary sm gridular odometer1">
+                  <span
+                    class="heading-secondary sm gridular odometer1"
+                    id="counter1"
+                    >0</span
+                  >x
+                </h2>
+                <p class="paragraph md white">
+                  Consequat nisi et nulla egestas.
+                </p>
+              </div>
+              <div class="rate-box accent-border">
+                <h2 class="heading-secondary sm gridular accent-color">
+                  <span
+                    class="heading-secondary sm gridular accent-color"
+                    id="counter2"
+                    >0</span
+                  >%
+                </h2>
+                <p class="paragraph md accent-color">
+                  Consequat nisi et nulla egestas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="header_logos center-children--sm">
+            <div class="logo-marquee">
+              <div class="logo-track">
+                <figure class="header_logo">
+                  <img src="./assets/logos/ohms-logo.svg" alt="ohms-logo" />
+                </figure>
+                <figure class="header_logo">
+                  <img src="./assets/logos/nrok-logo.svg" alt="nrok-logo" />
+                </figure>
+                <figure class="header_logo">
+                  <img src="./assets/logos/inc-logo.svg" alt="inc-logo" />
+                </figure>
+                <figure class="header_logo">
+                  <img src="./assets/logos/green-logo.svg" alt="green-logo" />
+                </figure>
+                <figure class="header_logo">
+                  <img src="./assets/logos/cwbank-logo.svg" alt="cwbank-logo" />
+                </figure>
+
+                <!-- duplicate logos for seamless loop -->
+                <figure class="header_logo">
+                  <img src="./assets/logos/ohms-logo.svg" alt="ohms-logo" />
+                </figure>
+                <figure class="header_logo">
+                  <img src="./assets/logos/nrok-logo.svg" alt="nrok-logo" />
+                </figure>
+                <figure class="header_logo">
+                  <img src="./assets/logos/inc-logo.svg" alt="inc-logo" />
+                </figure>
+                <figure class="header_logo">
+                  <img src="./assets/logos/green-logo.svg" alt="green-logo" />
+                </figure>
+                <figure class="header_logo">
+                  <img src="./assets/logos/cwbank-logo.svg" alt="cwbank-logo" />
+                </figure>
+              </div>
             </div>
           </div>
         </div>
@@ -121,5 +188,6 @@
     </div>
 
     <script src="/js/script.js"></script>
+    <script src="odometer.js"></script>
   </body>
 </html>

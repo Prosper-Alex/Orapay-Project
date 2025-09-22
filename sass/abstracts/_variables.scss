@@ -4,6 +4,8 @@ $accent-color: #e9ff52; /* Warm Tan – button hover, accents */
 $accent-color--light: #c89d63; /* Warm Tan – button hover, accents */
 $light-bg-color: #f5f5f5; /* Very Light Gray – page background */
 $border-color: #e0e0e0; /* Subtle Gray – dividers and borders */
+$border-color-light: #a5a9b6; /* Subtle Gray – dividers and borders */
+$border-color-dark: #333333; /* Subtle Gray – dividers and borders */
 $white: #ffffff; /* Clean white for sections, typography */
 $alice-blue: #edf3f7;
 
@@ -38,3 +40,5 @@ $black-shadow--clicked: 1.5px 1.5px 0px 0px rgba(0, 0, 0);
 $drop-shadow: 6px 6px 0px 0px rgba(129, 173, 200, 1);
 $drop-shadow--hover: 8px 8px 0px 0px rgba(129, 173, 200, 1);
 $drop-shadow--clicked: 1.5px 1.5px 0px 0px rgba(129, 173, 200, 1);
+
+$marquee-speed: 20s;
