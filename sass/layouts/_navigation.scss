@@ -18,6 +18,25 @@
     justify-content: space-between;
     align-items: center;
     flex: 1.3;
+
+    @include tab-port {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      background: #fff;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.4s ease;
+    }
+  }
+  &_list--wrapper .open {
+    display: none;
+    @include tab-port {
+      max-height: 30rem;
+      display: flex;
+    }
   }
 
   &_list {
@@ -60,6 +79,36 @@
         font-size: 1.4rem;
         font-weight: 400;
         color: $grey-color;
+      }
+    }
+  }
+
+  &_toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    gap: 6px; // space between lines
+    width: 30px;
+    height: 25px;
+
+    span {
+      width: 100%;
+      height: 3px;
+      background: #333;
+      border-radius: 3px;
+      transition: all 0.3s ease;
+    }
+
+    &.active {
+      span:nth-child(1) {
+        transform: rotate(45deg) translateY(8px);
+      }
+      span:nth-child(2) {
+        opacity: 0;
+      }
+      span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-8px);
       }
     }
   }
