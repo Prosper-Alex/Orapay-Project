@@ -6,13 +6,26 @@
   justify-content: space-between;
   align-items: center;
   background-color: $primary-color;
-  padding: 1.8rem 0;
+  padding: 1.8rem 2rem;
+  position: relative;
+  z-index: 100;
 
+  // =========================
+  // LOGO
+  // =========================
   &_logo {
     height: 7rem;
     flex: 0.7;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
   }
 
+  // =========================
+  // NAV LIST WRAPPER
+  // =========================
   &_list--wrapper {
     display: flex;
     justify-content: space-between;
@@ -28,54 +41,107 @@
       background: #fff;
       overflow: hidden;
       max-height: 0;
-      transition: max-height 0.4s ease;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.4s ease-in-out;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     }
-  }
-  &_list--wrapper .open {
-    display: none;
-    @include tab-port {
-      max-height: 30rem;
-      display: flex;
+
+    &.open {
+      @include tab-port {
+        max-height: 40rem;
+        opacity: 1;
+        visibility: visible;
+      }
     }
   }
 
+  // =========================
+  // NAV ITEMS
+  // =========================
   &_list {
     display: flex;
     align-items: center;
-    color: $secondary-color;
     gap: 5rem;
     justify-content: center;
     cursor: pointer;
+    color: $secondary-color;
 
-    .nav-item {
-      font-family: $secondary-font;
+    @include tab-port {
+      flex-direction: column;
+      gap: 2.5rem;
+      padding: 2rem 0;
+    }
+
+    li {
+      font-weight: 400;
+      cursor: pointer;
+
+      a {
+        font-family: $secondary-font;
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: inherit;
+        position: relative;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $accent-color;
+        }
+
+        // modern underline hover
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -4px;
+          width: 0;
+          height: 2px;
+          background: $accent-color;
+          transition: width 0.3s ease;
+        }
+        &:hover::after {
+          width: 100%;
+        }
+      }
     }
   }
 
-  &_list li {
-    font-weight: 400;
-    cursor: pointer;
-  }
-
+  // =========================
+  // NAV ACTION (buttons, etc.)
+  // =========================
   &_action {
-    font-family: $secondary-font;
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    font-family: $secondary-font;
+
+    @include tab-port {
+      margin-top: 1rem;
+    }
 
     .fb {
       border: 1px solid $secondary-color;
       border-radius: $border-radius-md;
-      padding: 1.4rem 2rem;
+      padding: 1.2rem 2rem;
+      background: transparent;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: $secondary-color;
+        color: #fff;
+
+        .nav-btn--text {
+          color: #fff;
+        }
+      }
 
       .nav-btn--dash {
         font-size: 1.6rem;
         font-weight: 500;
-        font-family: $secondary-font;
       }
 
       .nav-btn--text {
-        font-family: $secondary-font;
         font-size: 1.4rem;
         font-weight: 400;
         color: $grey-color;
@@ -83,14 +149,22 @@
     }
   }
 
+  // =========================
+  // TOGGLE BUTTON (Hamburger)
+  // =========================
   &_toggle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    cursor: pointer;
-    gap: 6px; // space between lines
-    width: 30px;
-    height: 25px;
+    display: none;
+
+    @include tab-port {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
+      gap: 6px;
+      width: 30px;
+      height: 25px;
+      z-index: 200; // above menu
+    }
 
     span {
       width: 100%;
