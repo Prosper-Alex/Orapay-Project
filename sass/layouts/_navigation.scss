@@ -5,14 +5,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $primary-color;
+  // background-color: $primary-color;
   padding: 1.8rem 2rem;
   position: relative;
   z-index: 100;
 
-  // =========================
-  // LOGO
-  // =========================
   &_logo {
     height: 7rem;
     flex: 0.7;
@@ -23,9 +20,6 @@
     }
   }
 
-  // =========================
-  // NAV LIST WRAPPER
-  // =========================
   &_list--wrapper {
     display: flex;
     justify-content: space-between;
@@ -38,7 +32,7 @@
       left: 0;
       width: 100%;
       flex-direction: column;
-      background: #fff;
+
       overflow: hidden;
       max-height: 0;
       opacity: 0;
@@ -47,18 +41,18 @@
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     }
 
-    &.open {
+    &.active {
       @include tab-port {
         max-height: 40rem;
         opacity: 1;
         visibility: visible;
+        background-color: transparent;
+        backdrop-filter: blur(220px);
+        padding: 3rem 2rem;
       }
     }
   }
 
-  // =========================
-  // NAV ITEMS
-  // =========================
   &_list {
     display: flex;
     align-items: center;
@@ -107,9 +101,6 @@
     }
   }
 
-  // =========================
-  // NAV ACTION (buttons, etc.)
-  // =========================
   &_action {
     display: flex;
     align-items: center;
@@ -124,11 +115,11 @@
       border: 1px solid $secondary-color;
       border-radius: $border-radius-md;
       padding: 1.2rem 2rem;
-      background: transparent;
+      // background: transparent;
       transition: all 0.3s ease;
 
       &:hover {
-        background: $secondary-color;
+        // background: $secondary-color;
         color: #fff;
 
         .nav-btn--text {
@@ -149,9 +140,6 @@
     }
   }
 
-  // =========================
-  // TOGGLE BUTTON (Hamburger)
-  // =========================
   &_toggle {
     display: none;
 
@@ -163,7 +151,7 @@
       gap: 6px;
       width: 30px;
       height: 25px;
-      z-index: 200; // above menu
+      z-index: 200;
     }
 
     span {

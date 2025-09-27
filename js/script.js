@@ -20,7 +20,11 @@
 // navigation
 
 const navToggle = document.getElementById("navToggle");
+const Mobilenav = document.querySelector(".nav_list--wrapper");
 
-navToggle.addEventListener("click", () => {
+function MobileNav() {
   navToggle.classList.toggle("active");
-});
+  Mobilenav.classList.toggle("active");
+}
+
+navToggle.addEventListener("click", MobileNav);
