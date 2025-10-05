@@ -65,6 +65,23 @@
     flex-direction: column;
     gap: 4rem;
     align-items: center;
+
+    .desktop {
+      display: flex;
+      @include tab-port {
+        display: none;
+        // background-color: blue;
+      }
+    }
+
+    .mobile {
+      display: none;
+
+      @include tab-land {
+        display: flex;
+        // background-color: #fff;
+      }
+    }
   }
 
   &_card--btn {
