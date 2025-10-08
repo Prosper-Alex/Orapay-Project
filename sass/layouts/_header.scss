@@ -23,6 +23,9 @@
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+    @include tab-port {
+      display: none;
+    }
 
     .info-line--wrapper {
       display: flex;
@@ -68,7 +71,7 @@
 
     .desktop {
       display: flex;
-      @include tab-port {
+      @include tab-land {
         display: none;
         // background-color: blue;
       }
@@ -79,6 +82,15 @@
 
       @include tab-land {
         display: flex;
+        justify-content: center;
+        height: 50vh;
+        width: 50rem;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        border-radius: 20px;
+        transform: translateX(-50%);
+
         // background-color: #fff;
       }
     }
@@ -98,6 +110,14 @@
     z-index: 1;
     cursor: pointer;
 
+    @include tab-land {
+      top: -2rem;
+    }
+
+    @include big-phone {
+      padding: 1rem 1.4rem;
+    }
+
     &_card--btn:hover {
       background: linear-gradient(180deg, #60686f 0%, #2a2a2a 100%);
     }
@@ -105,6 +125,10 @@
     .btn-arrow {
       display: inline-block;
       width: 5rem;
+
+      @include big-phone {
+        width: 3rem;
+      }
     }
 
     .accent {
@@ -113,6 +137,11 @@
       align-items: center;
       color: $accent-color;
       font-size: 2.7rem;
+
+      @include big-phone {
+        font-size: 2.2rem;
+        font-weight: 500;
+      }
     }
   }
 
@@ -185,6 +214,13 @@
     flex-direction: column;
     align-items: center;
 
+    @include tab-port {
+      flex-direction: column;
+      position: absolute;
+      bottom: 10rem;
+      margin-top: 15rem;
+    }
+
     .rate-box {
       display: flex;
       align-items: center;
@@ -193,10 +229,18 @@
       width: 20rem;
       border-radius: $border-radius-sm;
       padding: 3rem;
+      position: relative;
+      bottom: 10rem;
+
+      @include tab-port {
+        display: none;
+      }
     }
 
     .white-border {
       border: 1px solid $border-color-dark;
+      @include tab-port {
+      }
     }
     .accent-border {
       border: 1px solid $accent-color;
@@ -217,6 +261,8 @@
         animation: scroll $marquee-speed linear infinite;
         padding: 5rem 0;
 
+        margin-top: 10rem;
+
         .header_logo {
           flex: 0 0 auto;
           padding: 0 5rem;
@@ -228,6 +274,10 @@
           img {
             height: 5rem;
             width: auto;
+
+            @include tab-port {
+              height: 2.5rem;
+            }
           }
         }
       }

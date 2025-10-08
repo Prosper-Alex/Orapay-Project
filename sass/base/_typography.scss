@@ -34,16 +34,19 @@ html {
 }
 
 .heading-primary.bg {
-  font-size: 18rem !important;
+  font-size: 18rem;
   animation: moveinleft 1s ease-out;
 
   @include tab-land {
-    font-size: 10rem !important;
+    font-size: 10rem;
   }
 
   @include phone {
     font-size: 5rem;
     line-height: 1.2;
+  }
+  @include medium-phone {
+    font-size: 3rem;
   }
 }
 

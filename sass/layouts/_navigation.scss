@@ -13,6 +13,11 @@
     height: 7rem;
     flex: 0.7;
 
+    @include tab-port {
+      height: 4rem;
+      background-color: blue;
+    }
+
     img {
       height: 100%;
       width: auto;
