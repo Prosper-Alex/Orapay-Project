@@ -184,8 +184,21 @@
   text-transform: uppercase;
 }
 
-.bg {
+.p-bg {
   font-size: 18rem !important;
+  animation: moveinleft 1s ease-out;
+
+  @include tab-land {
+    font-size: 10rem !important;
+  }
+
+  @include phone {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+}
+.s-bg {
+  font-size: 16rem !important;
   animation: moveinleft 1s ease-out;
 
   @include tab-land {

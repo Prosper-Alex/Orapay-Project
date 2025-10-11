@@ -78,15 +78,15 @@ html {
   font-size: 6.4rem;
 }
 
-.heading-secondary.bg {
-  font-size: 6.4rem;
+.heading-secondary.s-bg {
+  font-size: 16rem;
 
   @include tab-land {
-    font-size: 4.8rem;
+    font-size: 7rem;
     line-height: 1.4;
   }
   @include medium-phone {
-    font-size: 3.5rem;
+    font-size: 4rem;
     line-height: 1.4;
   }
 }

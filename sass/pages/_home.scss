@@ -1,0 +1,18 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.growth {
+  margin: 10rem 0;
+  &_wrapper {
+  }
+
+  &_content {
+    .heading-secondary {
+      line-height: 16rem;
+      text-align: center;
+      .accent-color {
+        margin: 1rem 0;
+      }
+    }
+  }
+}
