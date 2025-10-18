@@ -1,19 +1,3 @@
-function startCounter(elementId, end, duration, suffix = '') {
-  let start = 0;
-  let incrementTime = duration / end;
-  let counter = document.getElementById(elementId);
-
-  if (!counter) return;
-
-  let interval = setInterval(() => {
-    start++;
-    counter.innerHTML = start + suffix; // <-- using innerHTML here
-    if (start >= end) {
-      clearInterval(interval);
-    }
-  }, incrementTime);
-}
-
 function startOdometerCounter(elementId, end) {
   let counter = document.getElementById(elementId);
 
