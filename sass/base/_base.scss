@@ -1,5 +1,5 @@
-@use "../abstracts/variables" as *;
-@use "../abstracts/mixins" as *;
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
 * {
   margin: 0;
@@ -8,8 +8,8 @@
 }
 
 @font-face {
-  font-family: "Grifter";
-  src: url(/assets/fonts/grifter-font/grifterbold.otf) format("opentype");
+  font-family: 'Grifter';
+  src: url(/assets/fonts/grifter-font/grifterbold.otf) format('opentype');
   font-weight: normal;
 }
 
@@ -56,12 +56,6 @@ button {
   letter-spacing: -0.5px;
 }
 
-p,
-span {
-  font-family: $primary-font;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-}
 .no-scroll {
   overflow: hidden;
 }

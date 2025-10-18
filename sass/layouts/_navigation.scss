@@ -9,13 +9,14 @@
   position: relative;
   z-index: 100;
 
-  &_logo {
+  &__logo {
     height: 7rem;
     flex: 0.7;
+    background-color: green;
 
     @include tab-port {
       height: 4rem;
-      background-color: blue;
+      background-color: orange;
     }
 
     img {
@@ -23,6 +24,13 @@
       width: auto;
     }
   }
+
+  // @include tab-port {
+  //   &_logo {
+  //     height: 4rem;
+  //     background-color: blue;
+  //   }
+  // }
 
   &_list--wrapper {
     display: flex;
