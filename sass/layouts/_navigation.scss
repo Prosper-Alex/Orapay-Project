@@ -1,5 +1,5 @@
-@use "../abstracts/mixins" as *;
-@use "../abstracts/variables" as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
 
 .nav {
   display: flex;
@@ -12,11 +12,9 @@
   &__logo {
     height: 7rem;
     flex: 0.7;
-    background-color: green;
 
     @include tab-port {
       height: 4rem;
-      background-color: orange;
     }
 
     img {
@@ -24,13 +22,6 @@
       width: auto;
     }
   }
-
-  // @include tab-port {
-  //   &_logo {
-  //     height: 4rem;
-  //     background-color: blue;
-  //   }
-  // }
 
   &_list--wrapper {
     display: flex;
@@ -97,7 +88,7 @@
 
         // modern underline hover
         &::after {
-          content: "";
+          content: '';
           position: absolute;
           left: 0;
           bottom: -4px;
@@ -127,11 +118,9 @@
       border: 1px solid $secondary-color;
       border-radius: $border-radius-md;
       padding: 1.2rem 2rem;
-      // background: transparent;
       transition: all 0.3s ease;
 
       &:hover {
-        // background: $secondary-color;
         color: #fff;
 
         .nav-btn--text {

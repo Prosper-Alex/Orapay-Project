@@ -1,5 +1,5 @@
-@use "../abstracts/variables" as *;
-@use "../abstracts/mixins" as *;
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
 .growth {
   margin: 10rem 0;
@@ -62,8 +62,35 @@
         }
       }
 
-      .graph-img {
-        padding-left: 1.5rem;
+      .graph {
+        display: flex;
+        align-items: flex-end;
+        gap: 1.2rem;
+        height: 150px;
+        width: 300px;
+
+        .bar {
+          position: relative;
+          width: 50px;
+          background: #e9ff52;
+          height: 0;
+          border-radius: 6px 6px 0 0;
+          transition: height 1s ease-out;
+        }
+
+        .bar span {
+          position: absolute;
+          bottom: 100%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-6px);
+          background: #000;
+          color: #e9ff52;
+          font-size: 1.4rem;
+          padding: 3px 6px;
+          border-radius: 4px;
+          opacity: 0;
+          transition: opacity 0.6s ease 0.8s;
+        }
       }
 
       .info-text {
@@ -116,4 +143,13 @@
       }
     }
   }
+}
+
+//  graph animation
+.graph.animate .bar {
+  height: var(--h);
+}
+
+.graph.animate .bar span {
+  opacity: 1;
 }

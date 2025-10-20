@@ -27,3 +27,17 @@ function MobileNav() {
 }
 
 navToggle.addEventListener('click', MobileNav);
+
+// Graph
+const graph = document.querySelector('.graph');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      graph.classList.add('animate');
+      observer.unobserve(entry.target); // triggers once
+    }
+  });
+});
+
+observer.observe(graph);
