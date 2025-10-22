@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 @mixin absCenter {
   position: absolute;
   top: 50%;
@@ -158,58 +160,58 @@ $breakpoints: (
 );
 
 @mixin small-phone {
-  @media (max-width: map-get($breakpoints, 'small-phone')) {
+  @media (max-width: map.get($breakpoints, 'small-phone')) {
     @content;
   }
 }
 @mixin medium-phone {
-  @media (max-width: map-get($breakpoints, 'medium-phone')) {
+  @media (max-width: map.get($breakpoints, 'medium-phone')) {
     @content;
   }
 }
 
 @mixin phone {
-  @media (max-width: map-get($breakpoints, 'phone')) {
+  @media (max-width: map.get($breakpoints, 'phone')) {
     @content;
   }
 }
 
 @mixin big-phone {
-  @media (max-width: map-get($breakpoints, 'big-phone')) {
+  @media (max-width: map.get($breakpoints, 'big-phone')) {
     @content;
   }
 }
 
 @mixin tab-port {
-  @media (max-width: map-get($breakpoints, 'tab-port')) {
+  @media (max-width: map.get($breakpoints, 'tab-port')) {
     @content;
   }
 }
 
 @mixin tab-land {
-  @media (max-width: map-get($breakpoints, 'tab-land')) {
+  @media (max-width: map.get($breakpoints, 'tab-land')) {
     @content;
   }
 }
 
 @mixin tab-land--sm {
-  @media (max-width: map-get($breakpoints, 'tab-land--sm')) {
+  @media (max-width: map.get($breakpoints, 'tab-land--sm')) {
     @content;
   }
 }
 
 @mixin sm-desktop {
-  @media (max-width: map-get($breakpoints, 'sm-desktop')) {
+  @media (max-width: map.get($breakpoints, 'sm-desktop')) {
     @content;
   }
 }
 @mixin bg-desktop {
-  @media (min-width: map-get($breakpoints, 'bg-desktop')) {
+  @media (min-width: map.get($breakpoints, 'bg-desktop')) {
     @content;
   }
 }
 @mixin xl-desktop {
-  @media (min-width: map-get($breakpoints, 'xl-desktop')) {
+  @media (min-width: map.get($breakpoints, 'xl-desktop')) {
     @content;
   }
 }
