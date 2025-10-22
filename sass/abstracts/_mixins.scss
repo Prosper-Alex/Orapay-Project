@@ -135,81 +135,81 @@
   */
 
 $breakpoints: (
-  "small-phone": 25em,
+  'small-phone': 25em,
   // 400px
-  "medium-phone": 32em,
+  'medium-phone': 32em,
   // 500px
-  "phone": 37.5rem,
+  'phone': 37.5rem,
   // 600px
-  "big-phone": 47em,
+  'big-phone': 47em,
   // 752px
-  "tab-port": 56.25em,
+  'tab-port': 56.25em,
   // 900px
-  "tab-land--sm": 65em,
+  'tab-land--sm': 65em,
   // 1040px
-  "tab-land": 75em,
+  'tab-land': 75em,
   // 1200px
-  "sm-desktop": 93.8em,
+  'sm-desktop': 93.8em,
   // 1500px
-  "bg-desktop": 112.5em,
+  'bg-desktop': 112.5em,
   // 1800px
-  "xl-desktop": 140.5em,
+  'xl-desktop': 140.5em,
   // 2250px
 );
 
 @mixin small-phone {
-  @media (max-width: map-get($breakpoints, "small-phone")) {
+  @media (max-width: map-get($breakpoints, 'small-phone')) {
     @content;
   }
 }
 @mixin medium-phone {
-  @media (max-width: map-get($breakpoints, "medium-phone")) {
+  @media (max-width: map-get($breakpoints, 'medium-phone')) {
     @content;
   }
 }
 
 @mixin phone {
-  @media (max-width: map-get($breakpoints, "phone")) {
+  @media (max-width: map-get($breakpoints, 'phone')) {
     @content;
   }
 }
 
 @mixin big-phone {
-  @media (max-width: map-get($breakpoints, "big-phone")) {
+  @media (max-width: map-get($breakpoints, 'big-phone')) {
     @content;
   }
 }
 
 @mixin tab-port {
-  @media (max-width: map-get($breakpoints, "tab-port")) {
+  @media (max-width: map-get($breakpoints, 'tab-port')) {
     @content;
   }
 }
 
 @mixin tab-land {
-  @media (max-width: map-get($breakpoints, "tab-land")) {
+  @media (max-width: map-get($breakpoints, 'tab-land')) {
     @content;
   }
 }
 
 @mixin tab-land--sm {
-  @media (max-width: map-get($breakpoints, "tab-land--sm")) {
+  @media (max-width: map-get($breakpoints, 'tab-land--sm')) {
     @content;
   }
 }
 
 @mixin sm-desktop {
-  @media (max-width: map-get($breakpoints, "sm-desktop")) {
+  @media (max-width: map-get($breakpoints, 'sm-desktop')) {
     @content;
   }
 }
 @mixin bg-desktop {
-  @media (min-width: map-get($breakpoints, "bg-desktop")) {
+  @media (min-width: map-get($breakpoints, 'bg-desktop')) {
     @content;
   }
 }
 @mixin xl-desktop {
-  @media (min-width: map-get($breakpoints, "xl-desktop")) {
+  @media (min-width: map-get($breakpoints, 'xl-desktop')) {
     @content;
   }
 }
