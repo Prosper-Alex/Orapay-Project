@@ -121,10 +121,10 @@
       transition: all 0.3s ease;
 
       &:hover {
-        color: #fff;
+        color: $primary-color !important;
 
         .nav-btn--text {
-          color: #fff;
+          color: $primary-color !important;
         }
       }
 

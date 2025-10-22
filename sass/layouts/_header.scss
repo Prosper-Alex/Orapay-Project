@@ -1,5 +1,5 @@
-@use "../abstracts/variables" as *;
-@use "../abstracts/mixins" as *;
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
 .header {
   &_wrapper {
@@ -84,7 +84,6 @@
         display: flex;
         justify-content: center;
         height: 50vh;
-        width: 50rem;
         position: absolute;
         top: 0;
         left: 50%;
@@ -92,6 +91,10 @@
         transform: translateX(-50%);
 
         // background-color: #fff;
+      }
+
+      @include small-phone {
+        height: 45vh;
       }
     }
   }
@@ -109,17 +112,22 @@
     left: 50%;
     z-index: 1;
     cursor: pointer;
+    transition: background 1s ease-out;
 
     @include tab-land {
       top: -2rem;
     }
 
-    @include big-phone {
-      padding: 1rem 1.4rem;
+    @include tab-port {
+      top: 1rem;
     }
 
-    &_card--btn:hover {
-      background: linear-gradient(180deg, #60686f 0%, #2a2a2a 100%);
+    @include phone {
+      top: 3.5rem;
+    }
+
+    @include big-phone {
+      padding: 1rem 1.4rem;
     }
 
     .btn-arrow {
@@ -143,6 +151,10 @@
         font-weight: 500;
       }
     }
+  }
+
+  &_card--btn:hover {
+    background: linear-gradient(180deg, #60686f 0%, #2a2a2a 100%);
   }
 
   &_cards {
@@ -191,7 +203,7 @@
             position: absolute;
             z-index: 10;
             font-weight: 500;
-            font-family: "Montserrat Alternates", sans-serif;
+            font-family: 'Montserrat Alternates', sans-serif;
             padding: 2rem;
           }
         }
@@ -260,8 +272,11 @@
         width: max-content;
         animation: scroll $marquee-speed linear infinite;
         padding: 5rem 0;
-
         margin-top: 5rem;
+
+        @include tab-port {
+          padding: 3rem 0;
+        }
 
         .header_logo {
           flex: 0 0 auto;

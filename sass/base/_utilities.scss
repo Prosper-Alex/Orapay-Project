@@ -1,5 +1,5 @@
-@use "../abstracts/mixins" as *;
-@use "../abstracts/variables" as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
 
 .center-children--bg {
   padding-left: 8vw !important;
@@ -167,7 +167,7 @@
 
 // Font
 .gridular {
-  font-family: "gridular", sans-serif;
+  font-family: 'gridular', sans-serif;
 }
 
 .fm {
@@ -196,21 +196,38 @@
     font-size: 10rem !important;
   }
 
+  @include tab-land--sm {
+    font-size: 7.5rem !important;
+  }
+
   @include phone {
-    font-size: 3.5rem;
+    font-size: 6.5rem !important;
+    line-height: 1.2;
+  }
+  @include medium-phone {
+    font-size: 5rem !important;
     line-height: 1.2;
   }
 }
+
 .s-bg {
   font-size: 16rem !important;
   animation: moveinleft 1s ease-out;
 
   @include tab-land {
-    font-size: 10rem !important;
+    font-size: 10rem;
+  }
+
+  @include tab-port {
+    font-size: 6rem !important;
+    line-height: 1.2;
   }
 
   @include phone {
-    font-size: 3.5rem;
-    line-height: 1.2;
+    font-size: 5.5rem !important;
+  }
+
+  @include medium-phone {
+    font-size: 4rem !important;
   }
 }

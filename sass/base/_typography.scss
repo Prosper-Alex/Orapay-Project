@@ -1,5 +1,5 @@
-@use "../abstracts/mixins" as *;
-@use "../abstracts/variables" as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
 
 html {
   font-size: 62.5%; // 1rem = 10px
@@ -85,8 +85,14 @@ html {
     font-size: 7rem;
     line-height: 1.4;
   }
+
+  @include phone {
+    font-size: 4.5rem;
+    line-height: 1.2;
+  }
+
   @include medium-phone {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.4;
   }
 }
@@ -99,33 +105,36 @@ html {
     font-size: 6.5rem;
     line-height: 1.4;
   }
+
+  @include phone {
+    font-size: 4rem;
+  }
+  @include medium-phone {
+    font-size: 3.5rem;
+  }
+}
+
+.heading-secondary.sm {
+  font-size: 8.7rem;
+  letter-spacing: 2%;
+  font-weight: 400;
+
+  @include tab-land {
+    font-size: 5rem;
+    line-height: 1.4;
+  }
   @include medium-phone {
     font-size: 3.5rem;
     line-height: 1.4;
   }
 }
-
-.heading-secondary.sm {
-  font-size: 8.7rem;
+.heading-secondary.rm {
+  font-size: 5.2rem;
   letter-spacing: 2%;
   font-weight: 400;
 
   @include tab-land {
-    font-size: 5rem;
-    line-height: 1.4;
-  }
-  @include medium-phone {
-    font-size: 2.5rem;
-    line-height: 1.4;
-  }
-}
-.heading-secondary.sm {
-  font-size: 8.7rem;
-  letter-spacing: 2%;
-  font-weight: 400;
-
-  @include tab-land {
-    font-size: 5rem;
+    font-size: 3.5rem;
     line-height: 1.4;
   }
   @include medium-phone {
@@ -181,7 +190,7 @@ html {
 }
 
 .heading-tertiary.rm {
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   letter-spacing: -2%;
 
   @include tab-land {
