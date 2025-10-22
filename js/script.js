@@ -40,4 +40,5 @@ const observer = new IntersectionObserver(entries => {
   });
 });
 
+// graph observer
 observer.observe(graph);
