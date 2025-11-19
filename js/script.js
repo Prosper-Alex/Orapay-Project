@@ -12,7 +12,9 @@ function main() {
   // startOdometerCounter('counter3', 100, 4000); // count 0 → 100 in 4s
   startOdometerCounter('counter1', '10'); // count 0 → 30 in 2s
   startOdometerCounter('counter2', '30'); // count 0 → 50 in 3s
-  startOdometerCounter('counter3', '100'); // count 0 → 100 in 4s
+  startOdometerCounter('counter3', '2630'); // count 0 → 100 in 4s
+  startOdometerCounter('counter4', '100'); // count 0 → 100 in 4s
+  startOdometerCounter('counter5', '100'); // count 0 → 100 in 4s
 }
 
 window.addEventListener('DOMContentLoaded', main);
@@ -42,3 +44,5 @@ const observer = new IntersectionObserver(entries => {
 
 // graph observer
 observer.observe(graph);
+
+// Loader functionality
