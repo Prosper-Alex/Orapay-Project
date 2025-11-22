@@ -1,3 +1,5 @@
+// Odometer counter functionality 
+
 function startOdometerCounter(elementId, end) {
   let counter = document.getElementById(elementId);
 
@@ -16,6 +18,7 @@ function main() {
   startOdometerCounter('counter4', '100'); // count 0 → 100 in 4s
   startOdometerCounter('counter5', '100'); // count 0 → 100 in 4s
 }
+
 
 window.addEventListener('DOMContentLoaded', main);
 
@@ -42,7 +45,8 @@ const observer = new IntersectionObserver(entries => {
   });
 });
 
+
 // graph observer
+
 observer.observe(graph);
 
-// Loader functionality
