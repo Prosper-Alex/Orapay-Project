@@ -75,7 +75,6 @@ html {
   font-weight: 600;
   line-height: 70.4px;
   letter-spacing: -0.03em;
-  font-size: 6.4rem;
 }
 
 .heading-secondary.s-bg {
@@ -220,10 +219,26 @@ html {
 
 .paragraph.bg {
   font-size: 2rem;
+
+  @include tab-land {
+    font-size: 1.8rem;
+  }
+
+  @include phone {
+    font-size: 1.6rem;
+  }
 }
 
 .paragraph.md {
   font-size: 1.7rem;
+
+  @include tab-land {
+    font-size: 1.6rem;
+  }
+
+  @include phone {
+    font-size: 1.4rem;
+  }
 }
 
 .paragraph.sm {

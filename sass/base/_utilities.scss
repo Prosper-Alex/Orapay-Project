@@ -231,3 +231,23 @@
     font-size: 4rem !important;
   }
 }
+
+.hs-md {
+  font-family: $primary-font;
+  font-weight: 600;
+  line-height: 70.4px;
+  letter-spacing: -0.03em;
+  font-size: 10rem;
+
+  @include tab-land {
+    font-size: 6.5rem;
+    line-height: 1.4;
+  }
+
+  @include phone {
+    font-size: 4rem;
+  }
+  @include medium-phone {
+    font-size: 3.5rem;
+  }
+}
